@@ -209,13 +209,13 @@ class PlantModel {
         isSelected: false),
   ];
 
-  //Get the favorated items
+  //Pega os itens favoritados
   static List<PlantModel> getFavoritedPlantModels() {
     List<PlantModel> _travelList = PlantModel.plantList;
     return _travelList.where((element) => element.isFavorated == true).toList();
   }
 
-  //Get the cart items
+  //Pega os itens do carrinho
   static List<PlantModel> addedToCartPlantModels() {
     List<PlantModel> _selectedPlantModels = PlantModel.plantList;
     return _selectedPlantModels
